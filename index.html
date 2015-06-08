@@ -1,0 +1,106 @@
+<html>
+
+	<head>
+
+		<title>Holocaust Memorial</title>
+
+		<script src="http://scrollrevealjs.org/js/scrollReveal.min.js?ver=2.0.1"></script>
+		<script src="https://raw.githubusercontent.com/bgrins/TinyColor/master/tinycolor.js"></script>
+		<script src="http://use.typekit.net/cvs6llg.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<script>
+function initSR() {
+var config = {
+    reset: true,
+    move: '50px',
+    mobile: true,
+    easing: 'ease-in-out',
+    over: '2s',
+    delay: 'always',
+}
+new scrollReveal(config);
+}
+		</script>
+
+		<script>
+var hue = 0;
+
+function changeColor() {
+hue = hue + 1;
+if (hue > 360) {
+    hue = 1;
+}
+
+var color = tinycolor({h: hue, s: 0.6, l: 0.3});
+document.body.style.background = color.toHexString();
+}
+
+var colorChanger = setInterval(changeColor, 200);
+
+		</script>
+
+		<style>
+		header {
+			font-family: "legendum";
+			color: #ffffff;
+			text-align: center;
+			font-size: 90px;
+		}
+
+		#name {
+			font-size: 48px;
+			text-align: center;
+			color: #ffffff;
+			font-family: "legendum";
+		}
+
+		.quote {
+			font-size: 14px;
+			background-color: #ffffff;
+			color: #000000;
+			border-radius: 25px;
+			width: 400px;
+			float: left;
+			padding: 10px;
+			margin: 9px;
+		}
+
+		[data-sr] {
+			visibility: hidden;
+		}
+		</style>
+	</head>
+
+
+	<body onload="initSR()">
+	<header data-sr>
+		Holocaust Quotes Memorial<br>
+		<div id="name">Nick Gauthier</div>
+	</header>
+
+	<div data-sr="enter left" class="quote">"Thou shalt not be a victim, thou shalt not be a perpetrator, but, above all, thou shalt not be a bystander."<br><br>- Yehuda Bauer<br><br>This quote means that no one should stand and watch something like the Holocaust happen, and that you shoul do something about it.</div>
+
+	<div data-sr="enter right" class="quote">"Do you know why most survivors of the Holocaust are vegan? It's because they know what it's like to be treated like an animal."<br><br>- Chuck Palahniuk, <i>Lullaby</i><br><br>This quote means that the camp inmates were treated very poorly, and that they don't want to eat meat, because they know how badly animals are treated.</div>
+
+	<div data-sr="enter top" class="quote">"It's in the history books, the Holocaust. It's just a phrase. And the truth is it happened yesterday. It happened to my mother. I never met my grandmothers or my grandfathers. They were all wiped up in the gas chambers of Nazi Germany."<br><br>- Gene Simmons<br><br>This person is trying to tell us that we don't really understand the Holocaust, and that we only know it as a word.</div>
+
+	<div data-sr="enter bottom" class="quote">"As the Nobel laureate Elie Wiesel warned years ago, to forget a holocaust is to kill twice."<br><br>Iris Chang, <i>The Rape of Nanking</i><br><br>This means that if you forget a holocaust, it will happen again.</div>
+
+	<div data-sr="enter left" class="quote">"Escape was not our goal since it was so unrealistic. What we wanted was to survive, to live long enough to tell the world what had happened in Buchenwald."<br><br>- Jack Werber, <i>Saving Children: Diary of a Buchenwald Survivor and Rescuer</i><br><br>This person is saying that they weren't trying to escape because it was impossible, instead trying to stay alive until they got liberated.</div>
+
+	<div data-sr="enter right" class="quote">"The duty of the survivor is to bear testimony to what happened...You have to warn people that these things can happen, that evil can be unleashed. Race hatred, violence, idolatries - they still flourish."<br><br>- Elie Wiesel<br><br>This quotes is saying that if you survived something horrible, that you should tell the story of it, so that it doesn't happen again, and yyou can prevent another person from experiencing it.</div>
+
+	<div data-sr="enter top" class="quote">"The Holocaust illustrates the consequences of prejudice, racism and stereotyping on a society. It forces us to examine the responsibilities of citizenship and confront the powerful ramifications of indifference and inaction."<br><br>- Tim Holden<br><br>This quote is telling us that the Holocaust is a result of personal hatreds against a group of people, and that we need to solve these.</div>
+
+	<div data-sr="enter bottom" class="quote">"Fiction cannot recite the numbing numbers, but it can be that witness, that memory. A storyteller can attempt to tell the human tale, can make a galaxy out of the chaos, can point to the fact that some people survived even as most people died. And can remind us that the swallows still sing around the smokestacks."<br><br>- Jane Yolen<br><br>This quote tells us that art can't provide a way for us to understand the Holocaust, but a survivor can.</div>
+
+	<div data-sr="enter left" class="quote">"The past is a presence between us. In all my mother does and says, the past continually discloses itself in the smallest ways. She sees it directly; I see its shadow. Still, it pulses in my fingertips, feeds on my consciousness. It is a backdrop for each act, each drama of our lives. I have absorbed a sense of what she has suffered, what she has lost, even what her mother endured and handed down. It is my emotional gene map."<br><br>- Fern Schumer Chapmen, <i>Motherland: Beyond the Holocaust: A Mother-Daughter Journey to Reclaim the Past</i><br><br>This person's mother had a difficult time, because she experienced the Holocaust. It was always weighing her down she was trying to do something.</div>
+
+	<div data-sr="enter right" class="quote">"Between two throw-ins in a soccer game, right behind my back, three thousand people had been put to death."<br><br>- Tadeusz Borowski, <i>This Way for the Gas, Ladies and Gentlemen</i><br><br>This person is saying that the people of Germany had no idea the Holocaust was happening. It was just business as usual.</div>
+
+	<div data-sr="enter top" class="quote">"The United Nations was founded in the aftermath of World War II, just as the world was beginning to learn the full horrors of history's worst genocide, the Holocaust that consumed 6 million Jews and 3 million others in Europe."<br><br>- Linda Chavez<br><br>This quote says that the UN was founded to prevent another Holocaust.</div>
+
+	<div data-sr="enter bottom" class="quote"><a href="workscited.html">Works Cited</a><br><br><a href="essay">Read the essay.</a></div>
+
+	</body>
+</html>
